@@ -32,10 +32,9 @@ public class EmployeeService {
 		return employeeRepository.findOne(id);
 	}
 	
-	/*public List<Employee> updateEmp (String empId,Employee emp){
-		employeeRepository.updateEmployeeRecords(empId, emp.getName());		
-		return (List)employeeRepository.findAll();
-	}*/
+	public List<Employee> updateEmp (String empId,Employee emp){		
+		return employeeRepository.updateEmployeeRecords(empId, emp.getName());		
+	}
 	
 	public List<Employee> deleteEmp (Employee emp){
 		employeeRepository.delete(emp);;

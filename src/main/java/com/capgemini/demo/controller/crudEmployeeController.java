@@ -39,10 +39,10 @@ public class crudEmployeeController {
 		return employeeService.addEmp(employee);
 	}
 	
-	/*@RequestMapping(value="/updateEmp/{id}", method= RequestMethod.POST)
+	@RequestMapping(value="/updateEmp/{id}", method= RequestMethod.POST)
 	public List<Employee> updateEmployee(@RequestBody Employee employee, @PathVariable("id") String id){
 		return employeeService.updateEmp(id,employee);
-	}*/
+	}
 	
 	@RequestMapping(value="/deleteEmp", method= RequestMethod.POST)
 	public List<Employee> deleteEmployee(@RequestBody Employee employee){
